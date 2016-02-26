@@ -8,12 +8,13 @@ You need to provide environment variables for the following settings:
 * TC_SERVER_URL (teamcity server url i.e 'http://yourteamcityserver/httpAuth/app/rest/')
 * TC_USER (teamcity username)
 * TC_PASSWORD (teamcity password)
-
-## Adding teamcity projects
-See the config/teamcity.yml file for adding projects
+* 
 
 ## Adding dashboards
 Add dashboards by adding files to the dashing directory called 'dashboardname.erb'
+
+## Adding teamcity projects
+See the config/teamcity.yml file for adding projects.  The key value pairs under 'repositories' in the yml - the key should correspond to the 'data-id' attribute in the dashboard/yourdashboard.erb file.
 
 # Running it up
 
